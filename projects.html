@@ -1,0 +1,21 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Projects | Abhishek Cholla</title><link rel="stylesheet" href="style.css"></head><body><nav><div class="wrap navin">
+<a class="brand" href="index.html">ABHISHEK CHOLLA</a>
+<div class="links"><a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="markets.html">Markets</a><a href="connect.html">Connect</a></div><button class="menu" aria-label="Menu" onclick="document.querySelector('.links').classList.toggle('mobile')">☰</button>
+</div></nav>
+<header class="wrap hero"><div class="eyebrow">Selected projects</div><h1>Build. Test. Learn. Improve.</h1><p class="lead">A collection of research, embedded, IoT and VLSI work from my academic and practical journey.</p></header>
+<section><div class="wrap"><div class="project"><div><span class="tag">JUN 2026 — PRESENT</span><h3>Deep CNN Architectures for Image Denoising</h3><p>Designing a deep CNN-based architecture to remove noise from images while preserving edges, textures and structural details.</p></div><div><p><strong>Research focus</strong><br>Network depth · convolutional layers · feature extraction · residual/skip connections · noisy/clean image pairs · PSNR · SSIM · model complexity · computational efficiency.</p></div></div></div></section>
+<section><div class="wrap"><div class="grid">
+<div class="card"><span class="tag">Embedded</span><h3>Digital Speed Sensing Driver Alert System</h3><p>Prototyped a motorcycle driver-alert system and real-time riding-behavior analysis display completely using ESP and I2C modules.</p></div>
+<div class="card"><span class="tag">VLSI</span><h3>8-bit Approximate Multiplier</h3><p>Worked on optimizing a novel 8-bit approximate multiplier for improved power efficiency and a trade-off between output and low power consumption. Paper is yet to be published.</p></div>
+<div class="card"><span class="tag">LabVIEW + IoT</span><h3>Sensor & Visualization Projects</h3><p>Worked with LabVIEW and Arduino Uno on projects using 10+ sensors and servo motors, with ThingSpeak used to visualize recorded data.</p></div>
+<div class="card"><span class="tag">Arduino</span><h3>Sensor-based Embedded Projects</h3><p>Built over twenty projects using Arduino and sensors including IR, ultrasonic, LDR and flame detection during embedded systems training.</p></div>
+</div></div></section><footer class="wrap"><span>© 2026 Abhishek Cholla</span><span>ECE • Embedded Systems • ML • Web</span><div class="visitor-counter" title="Portfolio visitor count">👁 <span id="visitorCount">—</span> visitors</div>
+<script>
+(async function(){
+  const el=document.getElementById("visitorCount"); if(!el) return;
+  try{
+    const r=await fetch("https://api.counterapi.dev/v1/abhishek-cholla-portfolio/visits/up");
+    const d=await r.json(); el.textContent=(d.count??d.value??"—").toLocaleString();
+  }catch(e){el.textContent="—";}
+})();
+</script></footer></body></html>

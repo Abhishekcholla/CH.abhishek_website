@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Connect | Abhishek Cholla</title><link rel="stylesheet" href="style.css"></head><body><nav><div class="wrap navin">
+<a class="brand" href="index.html">ABHISHEK CHOLLA</a>
+<div class="links"><a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="markets.html">Markets</a><a href="connect.html">Connect</a></div><button class="menu" aria-label="Menu" onclick="document.querySelector('.links').classList.toggle('mobile')">☰</button>
+</div></nav>
+<header class="wrap hero"><div class="eyebrow">Connect</div><h1>Let's connect.</h1><p class="lead">Choose a platform below. Active contact links open directly; social platforms that are not yet configured show a friendly work-in-progress page.</p></header>
+<section><div class="wrap"><div class="socials">
+<a class="social" href="mailto:23a81a04e2@sves.org.in"><div class="icon">✉</div><div><h3>Gmail</h3><p>Send me an email</p></div><span class="arrow">↗</span></a>
+<a class="social" href="https://github.com/" target="_blank" rel="noopener"><div class="icon">◉</div><div><h3>GitHub</h3><p>Open GitHub</p></div><span class="arrow">↗</span></a>
+<a class="social" href="https://wa.me/919059167807" target="_blank" rel="noopener"><div class="icon">◔</div><div><h3>WhatsApp</h3><p>Message me</p></div><span class="arrow">↗</span></a>
+<a class="social" href="wip.html?platform=Instagram"><div class="icon">◎</div><div><h3>Instagram</h3><p>Coming soon</p></div><span class="arrow">→</span></a>
+<a class="social" href="wip.html?platform=Facebook"><div class="icon">f</div><div><h3>Facebook</h3><p>Coming soon</p></div><span class="arrow">→</span></a>
+<a class="social" href="wip.html?platform=X"><div class="icon">𝕏</div><div><h3>X</h3><p>Coming soon</p></div><span class="arrow">→</span></a>
+</div></div></section>
+<section><div class="wrap"><div class="contactbox"><div class="eyebrow" style="color:#ddd">Direct contact</div><h2>Prefer email or phone?</h2><p>Use the buttons below for direct contact.</p><div class="actions"><a class="btn" href="mailto:23a81a04e2@sves.org.in">23a81a04e2@sves.org.in</a><a class="btn" href="tel:+919059167807">+91 9059167807</a></div></div></div></section><footer class="wrap"><span>© 2026 Abhishek Cholla</span><span>ECE • Embedded Systems • ML • Web</span><div class="visitor-counter" title="Portfolio visitor count">👁 <span id="visitorCount">—</span> visitors</div>
+<script>
+(async function(){
+  const el=document.getElementById("visitorCount"); if(!el) return;
+  try{
+    const r=await fetch("https://api.counterapi.dev/v1/abhishek-cholla-portfolio/visits/up");
+    const d=await r.json(); el.textContent=(d.count??d.value??"—").toLocaleString();
+  }catch(e){el.textContent="—";}
+})();
+</script></footer></body></html>

@@ -1,0 +1,13 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Work in Progress | Abhishek Cholla</title><link rel="stylesheet" href="style.css"></head><body><nav><div class="wrap navin">
+<a class="brand" href="index.html">ABHISHEK CHOLLA</a>
+<div class="links"><a href="index.html">Home</a><a href="about.html">About</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="markets.html">Markets</a><a href="connect.html">Connect</a></div><button class="menu" aria-label="Menu" onclick="document.querySelector('.links').classList.toggle('mobile')">☰</button>
+</div></nav><main class="wrap wip"><div class="wipbox"><span class="emoji">⚙️</span><div class="eyebrow">Work in progress</div><h1 style="font-size:clamp(50px,8vw,92px)">Oops — this page is still being built.</h1><p class="lead" style="margin:auto">The social profile you're looking for hasn't been connected yet. Check back soon.</p><div class="actions" style="justify-content:center"><a class="btn primary" href="connect.html">← Back to Connect</a><a class="btn" href="index.html">Home</a></div></div></main><footer class="wrap"><span>© 2026 Abhishek Cholla</span><span>ECE • Embedded Systems • ML • Web</span><div class="visitor-counter" title="Portfolio visitor count">👁 <span id="visitorCount">—</span> visitors</div>
+<script>
+(async function(){
+  const el=document.getElementById("visitorCount"); if(!el) return;
+  try{
+    const r=await fetch("https://api.counterapi.dev/v1/abhishek-cholla-portfolio/visits/up");
+    const d=await r.json(); el.textContent=(d.count??d.value??"—").toLocaleString();
+  }catch(e){el.textContent="—";}
+})();
+</script></footer></body></html>
